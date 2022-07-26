@@ -23,7 +23,6 @@ export const user = (app, db) => {
         const param = req.params.id
         const users = db.users
         const id = users.filter(el => el.id == param)
-
         const sucessMsg = {
             "message": `${param} deleted`
         }
